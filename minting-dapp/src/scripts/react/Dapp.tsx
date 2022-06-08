@@ -67,7 +67,7 @@ export default class Dapp extends React.Component<Props, State> {
         <>
           We were not able to detect <strong>MetaMask</strong>. We value <strong>privacy and security</strong> a lot so we limit the wallet options on the DAPP.<br />
           <br />
-          But don't worry! <span className="emoji">😃</span> You can always interact with the smart-contract through <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a> and <strong>we do our best to provide you with the best user experience possible</strong>, even from there.<br />
+          But don't worry! <span className="emoji">🦎</span> You can always interact with the smart-contract through <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a> and <strong>we do our best to provide you with the best user experience possible</strong>, even from there.<br />
           <br />
           You can also get your <strong>Whitelist Proof</strong> manually, using the tool below.
         </>,
@@ -146,7 +146,7 @@ export default class Dapp extends React.Component<Props, State> {
     return (
       <>
         {this.isNotMainnet() ?
-          <div className="not-mainnet">
+          <div className="not-mainnet" style={{ borderColor: "#39FF14", boxShadow: "0px 0px 15px" }} > 
             You are not connected to the main network.
             <span className="small">Current network: <strong>{this.state.network?.name}</strong></span>
           </div>
@@ -181,7 +181,7 @@ export default class Dapp extends React.Component<Props, State> {
                   />
                   :
                   <div className="collection-sold-out">
-                    <h2>Tokens have been <strong>sold out</strong>! <span className="emoji">🥳</span></h2>
+                    <h2>The Repticenz Uprising is <strong>sold out</strong>! <span className="emoji">👁</span></h2>
 
                     You can buy from our beloved holders on <a href={this.generateMarketplaceUrl()} target="_blank">{CollectionConfig.marketplaceConfig.name}</a>.
                   </div>

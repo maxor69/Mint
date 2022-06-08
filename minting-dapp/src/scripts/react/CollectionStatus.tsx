@@ -30,7 +30,7 @@ export default class CollectionStatus extends React.Component<Props, State> {
   render() {
     return (
       <>
-        <div className="collection-status">
+        <div className="collection-status" style={{ borderColor: "#39FF14", boxShadow: "0px 0px 15px" }}>
           <div className="user-address">
             <span className="label">Wallet address:</span>
             <span className="address">{this.props.userAddress}</span>

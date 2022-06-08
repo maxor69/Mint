@@ -29,7 +29,7 @@ strong {
 }
 
 main {
-  @apply flex flex-col;
+  //@apply flex flex-col;
 }
 
 #logo {
@@ -153,6 +153,6 @@ label {
 #footer {
   @apply m-auto;
   @apply w-min;
-  @apply max-w-xs;
-  @apply py-2;
+  @apply max-w-md;
+  // @apply py-2;
 }

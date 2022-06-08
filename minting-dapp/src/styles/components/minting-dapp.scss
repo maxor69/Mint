@@ -142,7 +142,9 @@
     }
 
     &.not-mainnet {
+      @apply block;
       @apply text-warning-txt;
+      
   
     
 
